@@ -1,0 +1,73 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+      },
+      colors: {
+        brand: {
+          50:  '#eef2ff',
+          100: '#e0e7ff',
+          200: '#c7d2fe',
+          400: '#818cf8',
+          500: '#6366f1',
+          600: '#4f46e5',
+          700: '#4338ca',
+          800: '#3730a3',
+        },
+      },
+      animation: {
+        'fade-in':      'fadeIn      0.4s  ease-out both',
+        'slide-up':     'slideUp     0.45s cubic-bezier(.21,1.02,.73,1) both',
+        'slide-down':   'slideDown   0.3s  ease-out both',
+        'scale-in':     'scaleIn     0.35s cubic-bezier(.21,1.02,.73,1) both',
+        'pop':          'pop         0.3s  cubic-bezier(.21,1.02,.73,1) both',
+        'shimmer':      'shimmer     1.6s  linear infinite',
+        'float':        'float       3s    ease-in-out infinite',
+        'float-slow':   'float       5s    ease-in-out infinite',
+        'float-delayed':'floatDelay  4s    ease-in-out infinite',
+        'pulse-soft':   'pulseSoft   2.5s  ease-in-out infinite',
+        'glow-pulse':   'glowPulse   2s    ease-in-out infinite',
+        'spin-slow':    'spin        4s    linear infinite',
+        'bounce-soft':  'bounceSoft  1.5s  ease-in-out infinite',
+        'gradient-x':   'gradientX   6s    ease infinite',
+        'wiggle':       'wiggle      0.4s  ease-in-out',
+        'slide-in-right':'slideInRight 0.4s cubic-bezier(.21,1.02,.73,1) both',
+        'counter':      'counter     0.6s  ease-out both',
+      },
+      keyframes: {
+        fadeIn:       { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+        slideUp:      { '0%': { opacity: '0', transform: 'translateY(24px) scale(.98)' }, '100%': { opacity: '1', transform: 'translateY(0) scale(1)' } },
+        slideDown:    { '0%': { opacity: '0', transform: 'translateY(-12px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+        scaleIn:      { '0%': { opacity: '0', transform: 'scale(0.88)' }, '100%': { opacity: '1', transform: 'scale(1)' } },
+        pop:          { '0%': { transform: 'scale(0.8)' }, '50%': { transform: 'scale(1.08)' }, '100%': { transform: 'scale(1)' } },
+        shimmer:      { '0%': { backgroundPosition: '-400px 0' }, '100%': { backgroundPosition: '400px 0' } },
+        float:        { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-10px)' } },
+        floatDelay:   { '0%,100%': { transform: 'translateY(0) rotate(0deg)' }, '50%': { transform: 'translateY(-8px) rotate(2deg)' } },
+        pulseSoft:    { '0%,100%': { opacity: '1' }, '50%': { opacity: '0.7' } },
+        glowPulse:    { '0%,100%': { boxShadow: '0 0 20px rgba(99,102,241,.15)' }, '50%': { boxShadow: '0 0 40px rgba(99,102,241,.3)' } },
+        bounceSoft:   { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-4px)' } },
+        gradientX:    { '0%,100%': { backgroundPosition: '0% 50%' }, '50%': { backgroundPosition: '100% 50%' } },
+        wiggle:       { '0%,100%': { transform: 'rotate(0deg)' }, '25%': { transform: 'rotate(-3deg)' }, '75%': { transform: 'rotate(3deg)' } },
+        slideInRight: { '0%': { opacity: '0', transform: 'translateX(20px)' }, '100%': { opacity: '1', transform: 'translateX(0)' } },
+        counter:      { '0%': { opacity: '0', transform: 'translateY(12px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+      },
+      boxShadow: {
+        'card':        '0 1px 3px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.04)',
+        'card-hover':  '0 20px 40px -8px rgba(79,70,229,.18), 0 8px 16px -4px rgba(79,70,229,.1)',
+        'glow':        '0 0 0 3px rgba(99,102,241,.25)',
+        'modal':       '0 32px 80px -8px rgba(0,0,0,.3), 0 0 0 1px rgba(255,255,255,.04)',
+      },
+      borderRadius: {
+        '4xl': '2rem',
+      },
+      backgroundSize: {
+        '200%': '200% 200%',
+      },
+    },
+  },
+  plugins: [],
+};
