@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ContactHub — MERN Contact Management App
 
 > Full-stack Contact Management Web Application built with the **MERN Stack** (MongoDB · Express · React · Node.js).  
@@ -188,3 +189,6 @@ Update `FRONTEND_URL` to your Vercel URL → **Save** (triggers redeploy).
 
 **Anmol Bhutani** — Chitkara University  
 Assignment for: INGLU Global · FSD Role · Batch 2027
+=======
+# MERN-Contact-Management-App-Frontend
+>>>>>>> 5f4950057f8bf7c22ca02a244058c34cf693a30e
